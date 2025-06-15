@@ -67,6 +67,8 @@ The dataset used in this project was sourced from Kaggle. According to the autho
       
     • Most continuous variables showed high variability (Coefficient of Variation > 50%), while a few demonstrated moderate variability — pointing to heterogeneity in participants' behavioral and psychological profiles.
 
+    ![boxplot_for_multiple_variables](https://github.com/user-attachments/assets/38aa9a7b-0d0c-4b12-aa3f-f2ffdf545bee)
+
 ## Demographic and Categorical Variables Overview
 
 The dataset presents a balanced gender distribution, with nearly equal proportions of male and female participants. A majority of the respondents were employed, suggesting that the sample primarily represents individuals actively engaged in the workforce.
@@ -75,6 +77,13 @@ With regard to work environment, most participants reported working on-site, fol
 
 When asked whether they currently seek mental health treatment, the majority responded "no", highlighting a relatively low rate of active help-seeking behavior. In terms of mental health risk levels, most participants were categorized as medium risk, followed by high, and then low risk individuals.
 
+![work_environment_bar_chart](https://github.com/user-attachments/assets/0d123042-0456-4289-bc2d-5ade2a1f3309)
+![seeks_treatment_bar_chart](https://github.com/user-attachments/assets/e9f0c39b-d73f-46dc-b6bc-3a6f9d308793)
+![mental_health_risk_bar_chart](https://github.com/user-attachments/assets/e033b73d-1fd1-471d-b056-fd9f67a2cd4f)
+![mental_health_history_bar_chart](https://github.com/user-attachments/assets/a859d416-7845-4a65-aa81-806bb1c668ef)
+![gender_bar_chart](https://github.com/user-attachments/assets/195dbde0-4e52-4b11-b035-cdc8cdc70f1a)
+![employment_status_bar_chart](https://github.com/user-attachments/assets/c0ad68e6-3ff5-4e33-a9ea-2fcdaa539a8c)
+
 ## Histogram Analysis of Continuous Variables
 
     • Sleep Hours was the only variable that exhibited a normal distribution, with a distinct peak around 6.75 hours, suggesting that the average respondent achieves an optimal sleep duration.
@@ -82,6 +91,8 @@ When asked whether they currently seek mental health treatment, the majority res
     • Productivity Score showed a left-skewed (negatively skewed) distribution, indicating that most participants reported higher productivity, with relatively fewer reporting lower scores.
       
     • All other continuous variables (age, stress level, physical activity days, depression score, anxiety score, and social support score) demonstrated a platykurtic distribution — characterized by flat tops and low kurtosis — suggesting a more even spread of values across the range; less clustering around the mean; and no dominant central tendency.
+
+![histograms](https://github.com/user-attachments/assets/31273904-e3c8-4141-b143-7698b849447b)
 
 ## Contingency Table Findings (Bivariate Categorical Analysis)
 
@@ -133,6 +144,8 @@ Implications:
       
     • Organizations should prioritize early identification and support for depression, not only for employee well-being but also to maintain optimal productivity.
       
+![scatter_plot_matrix](https://github.com/user-attachments/assets/e4236a8d-a44e-4afb-a680-334ab9f9675f)
+![pearson_correlation_heatmap](https://github.com/user-attachments/assets/275ec8ec-dae5-4f8b-9894-f8d76cd4bfef)
 
 ## Linear Regression: Depression as a Predictor of Productivity
 
@@ -166,3 +179,5 @@ This may reflect the unique psychological strain faced by remote employees due t
 
 Employers should tailor interventions for remote employees, including: enhanced virtual communication, routine-building tools, access to digital mental health resources, opportunities for virtual socialization. Further analysis could explore mediating variables such as social support, home environment, and workload, to uncover underlying mechanisms influencing remote workers’ mental health.
     
+![tukeys_postHoc_anxietyScores](https://github.com/user-attachments/assets/a050c358-372d-4461-912c-77ea751e064a)
+
