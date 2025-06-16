@@ -8,15 +8,15 @@ Conducted exploratory data analysis (EDA), statistical analysis (correlations an
 
     • Google colab
 
-    • Tools: Python (pandas, numpy, matplotlib, seaborn, scipy, and statsmodels.api, )
+    • Tools: Python (pandas, numpy, matplotlib, seaborn, scipy, and statsmodels.api)
 
-# Introduction
+## Introduction
 
 Mental health issues including depression and anxiety are growing concerns that affect people across all ages, countries and industries. In the workplace, these issues are often under-reported and under-treated, despite their increasing prevalence. Social, life-style and environmental factors such as work environment, sleep hours, social support, and physical activity may contribute to an individual’s mental health and their likelihood of seeking treatment. 
 
 Through this analysis, I aim to leverage data science techniques to identify factors that could significantly impact an employee’s mental health and well being; to understand their behavioral patterns; and to build predictive models that would inform mental health interventions, policy recommendations, and wellness strategies in the workplace.
 
-# Analysis Objectives
+## Analysis Objectives
 
     1. To clean and pre-process the data by handling missing values, and encoding categorical variables before analysis.
 
@@ -26,12 +26,12 @@ Through this analysis, I aim to leverage data science techniques to identify fac
 
     4. To predict the likelihood of seeking mental health treatment and investigate the social and lifestyle determinants of mental health using regression models.
 
-# About Dataset
+## About Dataset
 
 The dataset used in this project was sourced from Kaggle. According to the authors, it provides a realistic, synthetic simulation of global mental health survey responses from 10,000 anonymized individuals; and it was created to reflect actual patterns seen in workplace mental health data while ensuring full anonymity and privacy. 
 
 
-# Columns in the Dataset
+## Columns in the Dataset
 
     1. age
     2. gender
@@ -59,7 +59,7 @@ The dataset used in this project was sourced from Kaggle. According to the autho
       
     • The data is well-structured and ready for analysis, with no inconsistencies noted.
 
-# Summary Statistics & Distributional Properties
+## Summary Statistics & Distributional Properties
 
     • The mean and median values of the continuous variables were approximately equal, indicating symmetry and, in some cases, normality.
       
@@ -67,7 +67,7 @@ The dataset used in this project was sourced from Kaggle. According to the autho
       
     • Most continuous variables showed high variability (Coefficient of Variation > 50%), while a few demonstrated moderate variability — pointing to heterogeneity in participants' behavioral and psychological profiles.
 
-    ![boxplot_for_multiple_variables](https://github.com/user-attachments/assets/38aa9a7b-0d0c-4b12-aa3f-f2ffdf545bee)
+![boxplot_for_multiple_variables](https://github.com/user-attachments/assets/38aa9a7b-0d0c-4b12-aa3f-f2ffdf545bee)
 
 ## Demographic and Categorical Variables Overview
 
@@ -115,6 +115,7 @@ These findings suggest a lack of variability in treatment-seeking behavior and m
 A scatter plot of depression score vs. productivity score revealed a strong negative linear relationship — as depression scores increase, productivity tends to decrease.
 
 
+
 # Insights from Statistical and Regression Analyses 
 
 ## Logistic Regression Analysis: Predictors of Treatment-Seeking Behavior
@@ -124,6 +125,8 @@ A binary logistic regression was conducted to examine whether key psychosocial a
 **Interpretation:**
 
 This lack of significance suggests the influence of external or unmeasured variables, such as: stigma, access to mental health services, organizational culture or support, awareness and education, cultural or personal beliefs.
+
+**Recommendation:**
 
 These factors, while not captured quantitatively, may play a more substantial role in shaping treatment-seeking behavior. Therefore, future models should incorporate contextual, qualitative, or structural variables to better understand what drives or hinders help-seeking among employees.
 
@@ -139,7 +142,8 @@ This relationship highlights the adverse impact of poor mental health on workpla
       
     • Elevated depressive symptoms may lead to reduced engagement and output in professional settings.
       
-Implications:
+**Recommendations:**
+
     • While correlation does not imply causation, the strength of the association warrants further investigation using regression techniques to determine predictive power.
       
     • Organizations should prioritize early identification and support for depression, not only for employee well-being but also to maintain optimal productivity.
@@ -161,7 +165,7 @@ Implementing programs like mental health days, counseling services, and resilien
 
 ## Chi-Square Test: Work Environment and Employment Status
 
-Chi-square analyses tested for associations between: Work environment and employment status vs mental health risk, and  treatment-seeking behavior each. Results showed no statistically significant association. This implies that the likelihood of experiencing mental health issues or seeking help does not differ significantly across work environments (on-site, remote, hybrid) or employment statuses (employed, unemployed, student, self-employed).
+Chi-square analyses tested for associations between Work environment & employment status vs mental health risk &  treatment-seeking behavior. Results showed no statistically significant association. This implies that the likelihood of experiencing mental health issues or seeking help does not differ significantly across work environments (on-site, remote, hybrid) or employment statuses (employed, unemployed, student, self-employed).
 
 **Interpretation:**
 
